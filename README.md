@@ -70,6 +70,19 @@ Using the selected classification threshold of **0.24**, the final Random Forest
 | Accuracy | 0.8679 |
 
 The model identified **548 of 1,058 actual subscribers** in the test set.
+### Model Evaluation Visualizations
+
+#### ROC Curve
+
+The ROC curve evaluates the model's ability to distinguish between customers who subscribe and those who do not across different classification thresholds.
+
+![ROC Curve](roc_curve.png)
+
+#### Confusion Matrix
+
+Using the optimized classification threshold of **0.24**, the final Random Forest model correctly identified **548 subscribers** in the test set.
+
+![Confusion Matrix](confusion_matrix.png)
 
 ## Feature Importance
 
@@ -82,6 +95,8 @@ The five most influential original predictors in the Random Forest model were:
 | 3 | Day | 0.1271 |
 | 4 | Month | 0.1100 |
 | 5 | Job | 0.0921 |
+
+![Feature Importance](feature_importance.png)
 
 ## Key Business Insights
 
